@@ -18,6 +18,7 @@ def top_batsman_rcb(data):
     reversed_rcb_batsman = dict(sorted(rcb_batsman.items(), key=lambda total_runs : total_runs[1], reverse=True))
 
     top_ten_batsman_data = dict(list(reversed_rcb_batsman.items())[:10])
+    print(top_ten_batsman_data)
 
     batsman = list(top_ten_batsman_data.keys())
     total_runs = list(top_ten_batsman_data.values())

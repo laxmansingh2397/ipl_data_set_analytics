@@ -70,6 +70,7 @@ def total_umpires(data):
         else:
             umpires_count[country] = 1
 
+    print(umpires_count)
     del umpires_count["India"]
 
     country = list(umpires_count.keys())

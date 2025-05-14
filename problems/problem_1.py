@@ -16,7 +16,7 @@ def teams_total_runs(data):
 
     batting_team_total_runs["Rising Pune Supergiant"] += batting_team_total_runs["Rising Pune Supergiants"]
     del batting_team_total_runs["Rising Pune Supergiants"]
-
+    print(batting_team_total_runs)
     teams = list(batting_team_total_runs.keys())
     runs = list(batting_team_total_runs.values())
 
