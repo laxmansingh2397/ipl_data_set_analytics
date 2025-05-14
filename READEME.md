@@ -8,9 +8,9 @@
 
 ### Installation
 
-1. **Clone this repository(or download the code files):**
+1. **Clone this repository with (SSH key) or (download the code files):**
 ```
-git clone https://github.com/yourusername/ipl-team-runs.git
+git clone git@github.com:laxmansingh2397/ipl_data_set_analytics.git
 ```
 2. **Install required packages from requirement.txt.**
 ```
