@@ -4,7 +4,7 @@ matplotlib.use('TkAgg')
 from matplotlib import pyplot as plt
 
 deliveries_data = csv.DictReader(open("/home/laxman/python_virtual_env/ipl/required_data/deliveries.csv"))
-
+matches_data = csv.DictReader(open("/home/laxman/python_virtual_env/ipl/required_data/matches.csv"))
 
 def top_batsman_rcb(data):
     rcb_batsman = {}
@@ -25,7 +25,6 @@ def top_batsman_rcb(data):
     return batsman,total_runs
 
 def plot_chart(batsman,runs):
-
     plt.figure(figsize=(8,3))
     plt.title("Top_Ten_Batsman")
     plt.bar(batsman, runs, color="blue")
@@ -33,8 +32,6 @@ def plot_chart(batsman,runs):
     plt.ylabel("Total_runs")
     plt.tight_layout()
     plt.xticks(rotation=45, ha="right")
-
     plt.show()
-
 
 plot_chart(*top_batsman_rcb(deliveries_data))
