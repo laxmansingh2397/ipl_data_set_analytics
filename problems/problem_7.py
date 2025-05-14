@@ -27,7 +27,7 @@ def extra_run_of_teams(data):
 
 def plot_chart(teams,extra):
     plt.figure(figsize=(8,3))
-    plt.title("Extra Run Per Team")6
+    plt.title("Extra Run Per Team")
     plt.bar(teams, extra, color="blue")
     plt.xlabel("Teams")
     plt.ylabel("Extra_Runs")
